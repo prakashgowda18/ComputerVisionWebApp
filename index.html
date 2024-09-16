@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Web</title>
+    <!-- Adding OpenCv file to the web -->
+    <script async src="opencv.js" onload="openCvReady()"></script>
+    <!-- Adding CSS Stylle sheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding material symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Adding fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main page -->
+    <div class="main-page">
+        <!-- side line of the page -->
+        <div class="side-line"></div>
+        <!-- side barof the page -->
+        <div class="side-bar">
+          <span id="button-rgb" > <span  id ="circle" class="material-symbols-outlined " style="font-size:36px; color:white;">palette</span></span>
+          <span id="button-gray" > <span id ="circle" class="material-symbols-outlined " style="font-size:36px; color:white;">contrast</span></span>
+          <span id="button-blur" > <span id ="circle" class="material-symbols-outlined " style="font-size:36px; color:white;">Blur_on</span></span>
+          <span id="button-edge" > <span id ="circle" class="material-symbols-outlined " style="font-size:36px; color:white;">grade</span></span>
+          <span id ="circle" class="material-symbols-outlined " style="font-size:36px; color:white; background-color: #37c9ef;">videocam</span>
+                        
+        </div>
+        <!-- right panel of the page -->
+        <div class="right-panel">
+            <!-- header -->
+            <div class="header">
+                <!-- empty-side -->
+                <div class="empty-side"></div>
+                <h1>CV Web</h1>
+                <!-- logo-container -->
+                <div class="logo-container">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <!-- tablet-container -->
+            <div class="tablet-container">
+                <!-- tablet-image -->
+                <img id="tablet-image" src="Resources/tablet.png" height="600" width="800" alt="">
+                <!-- main-canvas -->
+            <canvas id="main-canvas" width="960" height="600"><img id="img-main" src="Resources/car.png" width="710" height="510" alt=""></canvas>
+            </div>
+        </div>
+
+    </div>
+    <!-- Adding JavaScript file -->
+    <script src="main.js"></script>
+</body>
+</html>
