@@ -37,4 +37,3 @@ function openCvReady(){
         };
     };
 }
-alert("Welcome!");
